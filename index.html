@@ -1,137 +1,1070 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-      <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
- <meta http-equiv = "refresh" content = "1; url = ./pages/About Me/" />
-  <title>Xudong Pan @CS@Fudan</title>
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="Xudong Pan; 潘旭东; AI Security; Deep Learning; Data Privacy; Fudan University">
+<link rel="author" href="https://ravensanstete.github.io/">
 
+<title>Xudong Pan's Homepage</title>
 
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="referrer" content="origin" />
-  <meta name="generator" content="Pelican" />
-<link href="/" rel="canonical" />
-  <!-- Feed -->
-
-  <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
-
-  <!-- Code highlight color scheme -->
-      <link href="/theme/css/code_blocks/github.css" rel="stylesheet">
-
-
-  <!-- Custom fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-
-
-
-<!-- Open Graph -->
-<meta prefix="og: http://ogp.me/ns#" property="og:site_name" content="Xudong Pan @CS@Fudan"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:type" content="blog"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:title" content="Xudong Pan @CS@Fudan"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:description" content="Welcome to My Homepage!"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:locale" content="en_US"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:url" content="/"/>
-<meta prefix="og: http://ogp.me/ns#" property="og:image" content="/theme/images/home-bg.jpg">
-
-<!-- Twitter Card -->
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Website",
-  "name": " Xudong Pan @CS@Fudan ",
-  "url" : "/",
-  "image": "/theme/images/home-bg.jpg",
-  "description": "Welcome to My Homepage!"
+<style>
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
 }
+p { font-size : 16px; }
+h1 { font-size : 34px; margin : 0; padding : 0; }
+h2 { font-size : 20px; margin : 0; padding : 0; }
+h3 { font-size : 18px; margin : 8; padding : 0; }
+body { padding : 0; font-family : Arial; font-size : 16px; background-color : #fff; margin: 0;}
+.title { width : 700px; margin : 0px auto; }
+.container { width : 900px; margin : 0px auto; border-radius: 10px;  background-color : #fff; padding : 0px;  clear:both;}
+#bio {
+    padding-top : 30px;
+}
+#me { border : 0 solid black; margin-bottom : 50px; border-radius : 10px; }
+#sidebar { margin-right : 25px; border : 0 solid black; float : left; margin-bottom : 0;}
+a { text-decoration : none; }
+a:hover { text-decoration : underline; }
+a, a:visited { color : #0050e7; }
+.publogo { width: 100 px; margin-right : 20px; float : left; border : 0;}
+.publication { clear : left; padding-bottom : 0px; }
+.publication p { height : 100px; padding-top : 5px;}
+.publication strong a { color : #0000A0; }
+.publication .links a { margin-right : 20px; }
+.codelogo { margin-right : 10px; float : left; border : 0;}
+.code { clear : left; padding-bottom : 10px; vertical-align :middle;} 
+.code .download a { display : block; margin : 0 15px; float : left;}
+.code strong a { color : #000; }
+.external a { margin : 0 10px; }
+.external a.first { margin : 0 10px 0 0; }
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+body {margin: 0;}
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #111;
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+</style>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?eedd28dbd413c6a373b5a8fe820adf69";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
 </script>
+    
+<!-- <script async="" src="./homepage_files/analytics.js"></script> -->
 </head>
-<!-- TODO : Body class -->
-<body class="home-template">
 
-<nav id="menu">
-  <a class="close-button">Close</a>
-  <div class="nav-wrapper">
-    <p class="nav-label">Menu</p>
-    <ul>
+<body>
+    <p class="container">
+        <ul class="sidenav" id="sect-nav">
+            <li><a href="#sect-bio" class="first">About Me</a></li>
+        <li><a href="#sect-news">News</a></li>
+        <li><a href="#sect-publications">Publications</a> </li>
+        <li><a href="#sect-impact">Impact</a></li>
+        <li><a href="#sect-patents">Patents</a></li> 
+        <li><a href="#sect-awards">Awards</a></li> 
+        <li><a href="#sect-reviewing">Service</a></li> 
+        <li><a href="#sect-teaching">Teaching</a></li>
+        </ul>
+    </p>
+    <div class="title" id="sect-bio" style="padding:0 16px;">
+        <div id="sidebar"><img src="./files/pxd_new.jpg" vspace="50 px" width="150 px" id="me" itemprop="photo"></div>
+        <div id="bio">
 
-              <li role="presentation"><a href="/pages/About Me/">Xudong Pan @ Fudan CS</a></li>
+            <br>
 
-    </ul>
-  </div>
-</nav>
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header id="blog-header" class="has-cover">
-      <div class="inner">
-        <nav id="navigation">
-          <span id="menu-button" class="nav-button">
-            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
-          </span>
-        </nav>
-        <h1 class="blog-name"><a href="/">Xudong Pan @CS@Fudan</a></h1>
-        <span class="blog-description">Welcome to My Homepage!</span>
+            <h1>
+                <span itemprop="name">Xudong Pan <font size="5">潘旭东</font> </span>
+            </h1>
 
-          <div class="blog-cover cover" style="background-color: black                </div>
-    </header>
+            <br>
+
+            <p style="line-height:23px;">
+                Ph.D. Candidate
+                <br>
+                School of Computer Science
+                <br>
+                Fudan University
+                <br>
+                <strong>Email</strong>: xdpan18 at fudan.edu.cn
+                <br>
+                <br>
+            </p>
+            <p class="external">
+                <a href="https://scholar.google.com/citations?hl=en&user=Unl69CYAAAAJ" class="first" target="_blank" rel="nofollow">Google Scholar</a>|
+                <a href="https://github.com/ravensanstete" target="_blank" rel="nofollow">GitHub</a>|
+                <a href="https://dblp.org/pid/71/7816.html" target="_blank" rel="nofollow">DBLP</a>|
+                <a href="./files/" target="_blank" rel="nofollow">CV</a>
+                <!-- <a href="https://twitter.com/realNingYu" target="_blank" rel="nofollow">Twitter</a> -->
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <!-- <div class="container">
+        <p>
+            <h2>Call for interns</h2>
+            <br>
+            I am looking for Ph.D. research interns with a background in content generation or large-scale representation learning during spring/summer 2023 and beyond. Each internship targets 1+ top-tier publications, has the potential to transfer to real features in Salesforce AI-empowered products, and is followed by full-time opportunities. Please apply <a href="https://salesforce.wd1.myworkdayjobs.com/en-US/External_Career_Site/job/California---Palo-Alto/XMLNAME-2023-Research-Intern---Salesforce-Research-Tableau-Research_JR158577-2?source=LinkedIn_Jobs" target="_blank" rel="nofollow">here</a> and email me your C.V. The hiring is <b>rolling-based</b>.
+        </p>
+    </div> -->
+
+    <div class="container">
+        <p>
+            <h2>About me</h2>
+            <br>
+            Welcome! My name is Xudong Pan (潘旭东). I am a final-year PhD student in School of Computer Science, Fudan University. I expect to graduate at June, 2023. My supervisor is Prof. Min Yang and Prof. Mi Zhang at Fudan University. 
+            <br>
+            <br>
+            I work at the interdisciplinary research area between AI and Security. Specifically, I am interested in the following three security aspects of deep learning ecosystem: AI Supply Chain Security, Privacy Risks of
+            Open AI Systems, and Copyright Protection for AI Models. In the past five years (2018-), I have published 20+ papers at top-tier conference/journals including TPAMI, TKDE, NeurIPS, ICML, Security & Privacy (Oakland) and USENIX Security as the primary researcher.
+            <br>
+        </p>
+    </div>
+
+    <div class="container">
+        <p id="sect-news">
+            <h2>News</h2>
+            <br>
+            [2023/02] Our work on defending LiDAR-based object detectors on self-driving cars is accepted to USENIX Security 2023.
+        </p>
+    </div>
+
+    <div class="container">
+        <p id="sect-publications">
+            <h2>Publications</h2>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/logo_sec23_lop.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="./" target="_blank" rel="nofollow">Exorcising “Wraith”: Protecting LiDAR-based Object Detector in Automated Driving System from Appearing Attacks</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Qifan Xiao*, <b><u>Xudong Pan*</u></b>, Yifan Lu, Mi Zhang, Min Yang
+                            <br>
+                            <br>
+                            <em>USENIX Security 2023</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="./" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/sec23-dn.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="./" target="_blank" rel="nofollow">Rethinking White-Box Watermarks on Deep Learning Models under Neural Structural Obfuscation</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Yifan Yan*, <b><u>Xudong Pan*</u></b>, Mi Zhang, Min Yang.
+                            <br>
+                            <br>
+                            <em>USENIX Security 2023</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="./" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/www23-mass.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="./" target="_blank" rel="nofollow">MaSS: Model-agnostic, Semantic and Stealthy Data Poisoning Attack on Knowledge Graph Embedding</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Xiaoyu You, Beina Sheng, Daizong Ding, Mi Zhang, <b><u>Xudong Pan</u></b>, Min Yang, Fuli Feng.
+                            <br>
+                            <br>
+                            <em>The Web Conference, 2023</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="./" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/www23-antifakeu.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="./" target="_blank" rel="nofollow">Anti-FakeU: Defending Shilling Attacks on Graph Neural Network based Recommender Model</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Xiaoyu You, Chi Lee, Daizong Ding, Mi Zhang, Fuli Feng, <b><u>Xudong Pan</u></b>, Min Yang
+                            <br>
+                            <br>
+                            <em>The Web Conference, 2023</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="./" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/icassp22.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://arxiv.org/pdf/2212.08841.pdf" target="_blank" rel="nofollow">RØROS: Building a Responsive Online Recommender System via Meta-Gradients Updating</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Mi Zhang, Duocai Wu.
+                            <br>
+                            <br>
+                            <em>2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://arxiv.org/pdf/2212.08841.pdf" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/neurips22-cans.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://neurips.cc/virtual/2022/poster/54440" target="_blank" rel="nofollow">House of Cans: Covert Transmission of Internal Datasets via Capacity-Aware Neuron Steganography</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Shengyao Zhang, Mi Zhang, Yifan Yan, Min Yang
+                            <br>
+                            <br>
+                            <em>The 36th Annual Conference on Neural Information Processing Systems (NeurIPS), 2022</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://neurips.cc/virtual/2022/poster/54440" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/kdd22_metav.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://dl.acm.org/doi/10.1145/3534678.3539257" target="_blank" rel="nofollow">MetaV: A Meta-Verifier Approach to Task-Agnostic Model Fingerprinting</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Yifan Yan, Mi Zhang, Min Yang
+                            <br>
+                            <br>
+                            <em>The 28th SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2022</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://dl.acm.org/doi/10.1145/3534678.3539257" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/sec22-exan.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://www.usenix.org/conference/usenixsecurity22/presentation/pan-exploring" target="_blank" rel="nofollow">Exploring the Security Boundary of Data Reconstruction via Neuron Exclusivity Analysis</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Mi Zhang, Yifan Yan, Jiaming Zhu, Min Yang
+                            <br>
+                            <br>
+                            <em>The 31st USENIX Security Symposium (USENIX Security), 2022</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://www.usenix.org/conference/usenixsecurity22/presentation/pan-exploring" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/sec22-lism.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://www.usenix.org/conference/usenixsecurity22/presentation/pan-hidden" target="_blank" rel="nofollow">Hidden Trigger Backdoor Attack on NLP Models via Linguistic Style Manipulation</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Mi Zhang, Beina Sheng, Jiaming Zhu, Min Yang
+                            <br>
+                            <br>
+                            <em>The 31st USENIX Security Symposium (USENIX Security), 2022</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://www.usenix.org/conference/usenixsecurity22/presentation/pan-hidden" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/icde22.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://ieeexplore.ieee.org/document/9835394/" target="_blank" rel="nofollow">Towards Backdoor Attack on Deep Learning based Time Series Classification</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Daizong Ding, Mi Zhang, Yuanmin Huang, <b><u>Xudong Pan</u></b>, Fuli Feng, Erling Jiang, Min Yang.
+                            <br>
+                            <br>
+                            <em>The 38th IEEE International Conference on Data Engineering (ICDE), 2022</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://ieeexplore.ieee.org/document/9835394/" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/tkde.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://ieeexplore.ieee.org/document/9527101" target="_blank" rel="nofollow">Enhancing Time Series Predictors with Generalized Extreme Value Loss</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Mi Zhang, Daizong Ding, <b><u>Xudong Pan</u></b>, Min Yang
+                            <br>
+                            <br>
+                            <em>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2021</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://ieeexplore.ieee.org/document/9527101" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/acsac21_quasi.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://dl.acm.org/doi/10.1145/3485832.3485881" target="_blank" rel="nofollow">Understanding the Threats of Trojaned Quantized Neural Network in Model Supply Chains</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Mi Zhang, Yifan Yan, Min Yang
+                            <br>
+                            <br>
+                            <em> The 38th Annual Computer Security Applications Conference (ACSAC), 2021</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://dl.acm.org/doi/10.1145/3485832.3485881" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/esorics21_tafa.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://link.springer.com/content/pdf/10.1007/978-3-030-88418-5_26.pdf" target="_blank" rel="nofollow">TAFA: A Task-Agnostic Fingerprinting Algorithm for Neural Networks</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Mi Zhang, Yifan Lu, Min Yang
+                            <br>
+                            <br>
+                            <em>The 26th European Symposium on Research in Computer Security (ESORICS), 2021</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://link.springer.com/content/pdf/10.1007/978-3-030-88418-5_26.pdf" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/cikm21.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://dl.acm.org/doi/10.1145/3459637.3482223" target="_blank" rel="nofollow">A Deep Learning Framework for Self-evolving Hierarchical Community Detection</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Daizong Ding, Mi Zhang, Hanrui Wang, <b><u>Xudong Pan</u></b>, Xiangnan He, Min Yang
+                            <br>
+                            <br>
+                            <em>The 30th ACM International Conference on Information and Knowledge Management (CIKM), 2021
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://dl.acm.org/doi/10.1145/3459637.3482223" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/sp20-bert.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://ieeexplore.ieee.org/document/9152761" target="_blank" rel="nofollow">Privacy Risks of General-Purpose Language Models</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Mi Zhang, Shouling Ji, Min Yang
+                            <br>
+                            <br>
+                            <em>2020 IEEE Symposium on Security and Privacy (S&P) <strong style="color: red;">WAIC Youth Distinguished Paper Mention</strong></em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://ieeexplore.ieee.org/document/9152761" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/sec20-gaa.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://dl.acm.org/doi/abs/10.5555/3489212.3489305" target="_blank" rel="nofollow">Justinian’s GAAvernor: Robust Distributed Learning with Gradient Aggregation Agent</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Mi Zhang, Duocai Wu, Qifan Xiao, Min Yang.
+                            <br>
+                            <br>
+                            <em>The 29th USENIX Security Symposium (USENIX Security), 2020</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://dl.acm.org/doi/abs/10.5555/3489212.3489305" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/tpami.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://ieeexplore.ieee.org/document/9146781" target="_blank" rel="nofollow">A Geometrical Perspective on Image Style Transfer with Adversarial Learning</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Mi Zhang, Daizong Ding, Min Yang
+                            <br>
+                            <br>
+                            <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://ieeexplore.ieee.org/document/9146781" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/aaai20.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://aaai.org/papers/03791-improving-the-robustness-of-wasserstein-embedding-by-adversarial-pac-bayesian-learning/" target="_blank" rel="nofollow">Improving the Robustness of Wasserstein Embedding by Adversarial PAC-Bayesian Learning</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Daizong Ding, Mi Zhang, <b><u>Xudong Pan</u></b>, Xiangnan He, Min Yang.
+                            <br>
+                            <br>
+                            <em>The 34th AAAI Conference on Artificial Intelligence (AAAI), 2020</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://aaai.org/papers/03791-improving-the-robustness-of-wasserstein-embedding-by-adversarial-pac-bayesian-learning/" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/icdm20.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://ieeexplore.ieee.org/document/9338387/" target="_blank" rel="nofollow">Modeling Personalized Out-of-Town Distances in Location Recommendation</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Daizong Ding, Mi Zhang, <b><u>Xudong Pan</u></b>, Xiangnan He, Min Yang.
+                            <br>
+                            <br>
+                            <em>The 20th IEEE International Conference on Data Mining (ICDM), 2020</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://ieeexplore.ieee.org/document/9338387/" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/kdd19.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://dl.acm.org/doi/10.1145/3292500.3330896" target="_blank" rel="nofollow">Modeling Extreme Events in Time Series Prediction</a>
+                            </strong>
+                            <br>
+                            <br>
+                            Daizong Ding, Mi Zhang, <b><u>Xudong Pan</u></b>, Xiangnan He, Min Yang
+                            <br>
+                            <br>
+                            <em>The 25th SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2019</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://dl.acm.org/doi/10.1145/3292500.3330896" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/icml18.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="http://proceedings.mlr.press/v80/pan18c/pan18c.pdf" target="_blank" rel="nofollow">Theoretical Analysis of Image-to-Image Translation with Adversarial Learning</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>Xudong Pan</u></b>, Mi Zhang, Daizong Ding
+                            <br>
+                            <br>
+                            <em>The 35th International Conference on Machine Learning (ICML), 2018</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="http://proceedings.mlr.press/v80/pan18c/pan18c.pdf" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/www18.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://dl.acm.org/doi/10.1145/3178876.3186131" target="_blank" rel="nofollow"> Geographical Feature Extraction for Entities in Location-based Social Networks </a>
+                            </strong>
+                            <br>
+                            <br>
+                            Daizong Ding, Mi Zhang, <b><u>Xudong Pan</u></b>, Duocai Wu, Pearl Pu
+                            <br>
+                            <br>
+                            <em>The 2018 World Wide Web Conference (WWW), 2018</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://dl.acm.org/doi/10.1145/3178876.3186131" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/crad-sow.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://d.wanfangdata.com.cn/periodical/jsjyjyfz202210014" target="_blank" rel="nofollow">基于神经元激活模式控制的深度学习训练数据泄露诱导</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>潘旭东</u></b>，张谧，杨珉
+                            <br>
+                            <br>
+                            <em>计算机研究与发展, P2323-2337, 2022</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://d.wanfangdata.com.cn/periodical/jsjyjyfz202210014" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="publication">
+                <table><tbody>
+                    <tr>
+                        <td>
+                            <img src="./files/crad-bert.png" class="publogo" width="200 px">
+                        </td>
+                        <td>
+                            <strong>
+                                <a href="https://www.cnki.com.cn/Article/CJFDTOTAL-JFYZ202105017.htm" target="_blank" rel="nofollow">通用深度学习语言模型的隐私风险评估</a>
+                            </strong>
+                            <br>
+                            <br>
+                            <b><u>潘旭东</u></b>，张谧，颜一帆，陆逸凡，杨珉
+                            <br>
+                            <br>
+                            <em>计算机研究与发展, P1092-1105, 2021</em>
+                            <br>
+                            <br>
+                            <span class="links">
+                                <a href="https://www.cnki.com.cn/Article/CJFDTOTAL-JFYZ202105017.htm" target="_blank" rel="nofollow">pdf</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- <a href="#sect-nav" class="first">Back to Top</a> -->
+        </p>
+
+    <div class="container">
+        <p id="sect-impact">
+            <h2>Impact</h2>
+            <br>
+            <ul>
+                <li>
+                    Our work discovered the <strong>privacy risks of 8 commercial pretrained language models created by Google, OpenAI and Meta (Facebook)</strong>, which were recognized as "<em>makes them [pretrained language models] significantly more dangerous...</em>" in one technical report jointly written by the IT giants (<a href="https://arxiv.org/abs/2301.13188">Here</a>), and fostered a number of follow-up research on privacy-preserving language modeling.
+                </li>
+                <li>
+                    Our work demonstrated the <strong>stealthy trojan attacks on quantized AI models in real-world edge devices</strong> including Raspberry Pi and NVIDIA Jetson.
+                </li>
+                <li>
+                    Our work analyzed the copyright issues of AI models in third-party model sharing platforms, and built novel forensic techniques for tracing illegal model reuse in the wild. The techniques are compiled as <strong>one of the best practices on AI security (along with cases from IT giants including Ant Group and IBM)</strong> in the "<em>AI Security Standardization Whitebook</em>" by China Academy of Information and Communications Technology (CAICT). 
+                </li>
+                <li>
+                    Our work successfully revealed <strong>the feasibility of physical attacks on Baidu's Apollo self-driving system</strong> in a closed road at campus, and proposed the defense solution which is now integrated into the Apollo open-source platform. 
+                </li>
+
+            </ul>
+        </p>
+        <!-- <a href="#sect-nav" class="first">Back to Top</a> -->
+    </div>
 
 
-  <section id="wrapper">
-    <a class="hidden-close"></a>
+    <div class="container">
+        <p id="sect-patents">
+            <h2>Patents</h2>
+            <br>
+            <div class="publication">
+                <strong>
+                    A Defense Agent for Enhancing the Robustness of Distributed Learning Systems
+                </strong>
+                <br>
+                <em>Invention Patent (No. CN111967015A), China, 2020</em>
+            </div>
+            <br>
+            <div class="publication">
+                <strong>
+                    A Meta-Verifier Approach to Deep Neural Network Fingerprinting
+                </strong>
+                <br>
+                <em>Invention Patent (No. CN202210879918.2), China, 2022</em>
+            </div>
+            <br>
+            <div class="publication">
+                <strong>
+                    A Training Data Reconstruction Algorithm based on Neuron Exclusivity
+                </strong>
+                <br>
+                <em>Invention Patent (No. CN202210183023.5), China, 2022</em>
+            </div>
+            <br>
+            <div class="publication">
+                <strong>
+                    A Task-Agnostic Fingerprinting Scheme for Deep Neural Networks
+                </strong>
+                <br>
+                <em>Invention Patent (No. CN202111178549.6), China, 2021</em>
+            </div>
+        </div>
+        <!-- <a href="#sect-nav" class="first">Back to Top</a> -->
+    </p>
 
-<div id="index" class="container">
-  <main class="content" role="main">
+    <div class="container">
+        <p id="sect-awards">
+            <h2>Selected Awards</h2>
+            <br>
+            <div>
+                <ul>
+                <li> <strong>National Scholarships</strong>, Ministry of Education, China (2022, $4,250)</li> 
+                <li>
+                    <strong>Academic Star, Fudan University</strong> (2022, 10 winners across all the STEM graduate schools)
+                </li>
+                <li>
+                    <strong>Student Grant</strong>, The USENIX Association (2022, $1,000)
+                </li>
+                <li>
+                <strong>Youth Outstanding Paper Nomination</strong>, World Artificial Intelligence Conference (2022) 
+                </li>
+                <li>
+                    <strong>1st Place of AutoDriving CTF</strong>, DEFCON 30 (2022, Team Co-Leader)
+                </li>
+                <li>
+                <strong>1st Place of AutoDriving CTF</strong>, DEFCON 29 (2021, Team Co-Leader)
+                </li>
+                <li>
+
+                <strong>Student Grant</strong>, The USENIX Association (2020, $500)
+                </li>
+                <li>
+                <strong>National Scholarships</strong>, Ministry of Education, China (2020, $4,250)
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!-- <a href="#sect-nav" class="first">Back to Top</a> -->
+    </p>
+
+    <!-- <div class="container">
+        <p id="sect-mentoring">
+            <h2>Mentoring</h2>
+            <br>
+            <div>
+                <a href="https://tr.linkedin.com/in/buraktasdemir" target="_blank" rel="nofollow">Burak Taşdemir</a> @Bilkent
+                <br>
+                <a href="https://scholar.google.com/citations?user=SLtSdMAAAAAJ&hl=en" target="_blank" rel="nofollow">Yusuf Dalva</a> @Bilkent
+                <br>
+                <a href="https://cc13qq.github.io/" target="_blank" rel="nofollow">Qian Wang</a> @HUST
+                <br>
+                <a href="https://minxingzhang.github.io/" target="_blank" rel="nofollow">Minxing Zhang</a> @CISPA
+                <br>
+                <a href="https://vibashan.github.io/" target="_blank" rel="nofollow">Vibashan Vishnukumar Sharmini</a> @JHU
+                <br>
+                <a href="https://canqin.tech/" target="_blank" rel="nofollow">Can Qin</a> @NEU
+                <br>
+                <a href="https://applexy.github.io/cv/" target="_blank" rel="nofollow">Yuan Xin</a> @CISPA
+                <br>
+                <a href="https://yxoh.github.io/" target="_blank" rel="nofollow">Yixin Wu</a> @CISPA
+                <br>
+                <a href="https://www.linkedin.com/in/shuo-wen-7135a2208/?originalSubdomain=ch" target="_blank" rel="nofollow">Shuo Wen</a> @MPI-INF
+                <br>
+                <a href="https://www.eml-unitue.de/people/anders-christensen#Profile" target="_blank" rel="nofollow">Anders Christensen</a> @Tübingen
+                <br>
+                <a href="https://eml-unitue.de/people/shyamgopal-karthik" target="_blank" rel="nofollow">Shyamgopal Karthik</a> @MPI-IS
+                <br>
+                <a href="https://fdszy.github.io/" target="_blank" rel="nofollow">Zeyang Sha</a> @CISPA
+                <br>
+                <a href="https://yvonnemamama.github.io/" target="_blank" rel="nofollow">Yihan Ma</a> @CISPA
+                <br>
+                <a href="https://praeclarumjj3.github.io/" target="_blank" rel="nofollow">Jitesh Jain</a> @IIT
+                <br>
+                <a href="https://zhenglisec.github.io/" target="_blank" rel="nofollow">Zheng Li</a> @CISPA
+                <br>
+                <a href="https://liu.ai/" target="_blank" rel="nofollow">Yugeng Liu</a> @CISPA
+                <br>
+                <a href="https://www.linkedin.com/in/vladislav-skripniuk-8a8891143/?originalSubdomain=ru" target="_blank" rel="nofollow">Vladislav Skripniuk</a> @Audatic
+                <br>
+                <a href="https://a514514772.github.io/#publications" target="_blank" rel="nofollow">Hui-Po Wang</a> @CISPA
+                <br>
+                <a href="https://cispa.de/en/people/dingfan.chen" target="_blank" rel="nofollow">Dingfan Chen</a> @CISPA
+                <br>
+                <a href="https://dynamo.cs.ucsb.edu/people/sharma" target="_blank" rel="nofollow">Saurabh Sharma</a> @UCSB
+            </div>
+        </div>
+    </p> -->
 
 
-  </main>
-</div>
-      <!-- TODO : Body class -->
-    <div id="body-class" style="display: none;" class=""></div>
+    <div class="container">
+        <p id="sect-reviewing">
+            <h2>Service & Outreach</h2>
+            <br>
+            <div>
+                <ul>
+                    <li>
+                        Invited reviewer for CVPR (2023), AAAI (2022, 2021), ICML (2022), IJCAI (2021).
+                    </li>
+                    <li>
+                        Invited speaker and panel speaker for IJCAI China (2022).
+                    </li>
+                    <li>
+                        In-depth participation in a new revision on the "<em>AI Security Standardization White-book</em>", China Academy of Information and Communications Technology (CAICT).
+                    </li>
+                    <li>
+                        Co-founder of the <em>Theoretical Tools for AI Security</em> study group (weekly meeting, 2022/03-current) and the <em>Introduction to System Security for AI Researcher</em> reading group (covering program analysis, fuzzing, symbolic execution, network intrusion detection and how AI helps them, 2022/03-2022/06) at Fudan University. 
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <a href="#sect-nav" class="first">Back to Top</a> -->
+    </p>
 
-    <footer id="footer">
-      <div class="inner">
-        <section class="credits">
+    <div class="container">
+        <p id="sect-teaching">
+            <h2>Teaching</h2>
+            <br>
+            <div>
+                @<b>Fudan University</b>
+                <br>
+                <ul>
+                <li><strong>Academic English</strong>, Undergraduate Course, Teacher Assistant, Spring, 2021/2019 
+                </li>    
+                <br>
+                 
+                <strong>Responsibility</strong>: Teaching how to do presentation on technical topics in English.
+                <br>
+                <li>
+                    <strong>Introduction to Computing</strong>, Undergraduate Course, Teacher, Spring, 2018 
+                </li>  
+                
+                <strong>Responsibility</strong>: Teaching introductory python programming and basic computation notions (e.g., loop, condition, recursion, Turing machine) to 100 overseas students (from Asia, Europe, America, Africa, and Australia) with medical backgrounds.
+            </div>
+        </div>
+        <!-- <a href="#sect-nav" class="first">Back to Top</a> -->
+    </p>
 
-
-          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
-          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
-        </section>
-      </div>
-    </footer>
-  </section>
-
-  <script src="/theme/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/theme/js/script.js"></script>
-
-    <!-- Global Site Tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3546274-12"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-3546274-12', { 'anonymize_ip': true });
-    </script>
-<script type="text/javascript">
-    var disqus_shortname = 'attilademo';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '/theme/js/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-</body>
-</html>
+</body></html>
